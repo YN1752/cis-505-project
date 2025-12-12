@@ -25,6 +25,26 @@ This project was for my "Algorithm Analysis and Design" course. In this project,
     - IF the height of previous point in the result_skyline[][2] is NOT equal to max_height, THEN add {x-coordinate, max_height} to result_skyline[][2].
     - At one point, result_skyline[][2] would have all the points from either left_skyline or right_skyline. Now, we add the remaining points of the other skyline to the result_skyline[][2] by comparing height of previous point, and return the length of result_skyline[][2].
 
+
+<h2>Input File Format</h2>
+
+**File Format:** TEXT File (.txt)<br>
+First line contains only 1 integer, which is the input array size *n* representing the number of buildings in the input set.<br>
+Next *n* lines contain exactly 3 positive integers in each line, seperated by a single space. *First integer* is the *left x-coordinate* of the building, *second integer* is the *right x-coordinate* of the building, and *third integer* is the *height* of the building.
+
+Example.<br>
+5<br>
+2 9 10<br>
+3 7 15<br>
+5 12 12<br>
+15 20 10<br>
+19 24 8<br>
+
+Here, *n=5*, which means 5 buildings in the input set.<br>
+*1st* building has *left x-coordinate=2*, *right x-coordinate=9*, *height=10*.<br>
+*2nd* building has *left x-coordinate=3*, *right x-coordinate=7*, *height=15*.<br>
+So on upto *nth* building.
+
 <h2>Compilation Commands</h2>
 
 - **Brute Force:** gcc Skyline_BF.c -o Skyline_BF
